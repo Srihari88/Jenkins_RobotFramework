@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Suite description
 Library         SeleniumLibrary
-Library         OperatingSystem
+#Library         OperatingSystem
 #Suite Setup     Setup chromedriver
 
 *** Test Cases ***
