@@ -1,5 +1,6 @@
 *** Settings ***
 Documentation    Suite description
+Library         SeleniumLibrary
 
 *** Test Cases ***
 Test Case-1
@@ -11,6 +12,7 @@ Test Case-2
 
 Test Case-3
     open browser    ${URL}      ${Chrome}
+    close browser
 
 *** Keywords ***
 
