@@ -21,7 +21,7 @@ Test Case-3
 Test Case-4
     ${title}=           Get Title
     log to console      ${title}
-    Title Should Be     Facebook – log in or sign up
+    close browser
 
 
 
