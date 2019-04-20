@@ -21,11 +21,12 @@ Test Case-3
 Test Case-4
     ${title}=           Get Title
     log to console      ${title}
-    close browser
+
 
 Test Case-5
     ${get text}=      Get text      //div[text()='Create a new account']
     log to console     {get text}
+    close browser
 
 
 
