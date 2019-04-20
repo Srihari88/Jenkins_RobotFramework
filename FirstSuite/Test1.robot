@@ -9,4 +9,13 @@ Test Case-1
 Test Case-2
     should not be equal as integers  1      2
 
+Test Case-3
+    open browser    ${URL}      ${Chrome}
+
 *** Keywords ***
+
+
+*** Variables ***
+
+${URL}          https://www.facebook.com/
+${Chrome}       Chrome
