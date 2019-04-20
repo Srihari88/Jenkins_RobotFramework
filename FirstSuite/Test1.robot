@@ -14,6 +14,9 @@ Test Case-2
 
 Test Case-3
     open browser    ${URL}      ${Chrome}
+    input text      xpath=//input[@id='email']      sriharinaidu
+    input text      xpath=//input[@id='pass']       90101010
+    click element   xpath=//input[@type='submit']
     close browser
 
 *** Keywords ***
