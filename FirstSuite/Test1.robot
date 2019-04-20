@@ -113,115 +113,115 @@ Login With Valid data
     input text       ${Login.Username}           daisy.dalia
     input text       ${Login.Password}           dentrain
     click button     ${Login.Submit}
-
-Move to Portal
-    click element    ${Profile}
-    sleep            ${sleep}
-    click element    ${Portal}
-
-Verify the link
-    ${portal_link}=     get location
-    log to console      ${portal_link}
-    should be equal     ${portal_link}      https://www.pitchvision.com/#/hub
-
-Verify the portal options
-    wait until element is visible            ${AllFeatures}
-    @{portal_features}=     Get WebElements  ${AllFeatures}
-    @{result}=       Create List
-    :FOR   ${locator}   IN    @{portal_features}
-        \       ${name}=    Get Text    ${locator}
-        \   log to console      ${name}
- #       \       Append To List    ${result}    ${name}
-    Log    ${result}
-
-#Match Page Keywords
-Redirect to Match Page
-    click element      ${MatchStatus}
-    sleep               ${sleep}
-
-Add match status
-    click element       ${Addmatch}
-
-
-Date selection
-    click element       ${Date}
-    sleep               2
-    click element       ${SelectDate}
-
-
-Enter teamname
-    input text          ${TeamName}         World class match
-
-Enter opposition
-    input text          ${Opposition}       Gurgaon Gang Stars
-
-Enter League
-    input text          ${League}           GioneeStars
-
-Enter Venue
-    input text          ${Venue}            IPhoneUsers
-
-Enter Match type
-    input text          ${MatchType}        OneDay
-
-Select match format
-    Select From List By Label       ${MatchFormat}      T20
-
-select match grade
-    Select From List By Label       ${MatchGrade}       Club
-
-select match result
-    Select From List By Label       ${Result}           Lost
-
-select match surface
-    Select From List By Label       ${Surface}          Artificial Surface
-
-
-# Batting values for the match
-select position
-    select from list by label       ${Position}         1
-
-Enter batting runs
-    input text                      ${Runs}             45
-
-Enter balls faced
-    input text                      ${Ballsfaced}       32
-
-select Dismissal type
-    select from list by label       ${Dismissals}       Bowled
-
-
-# Enter bowling details for the match
-
-Enter Overs
-    input text              ${Overs}            5
-
-Enter Bowling Runs
-    input text              ${Runs}             23
-
-Enter Wickets
-    input text              ${wickets}          3
-
-Enter wides
-    input text              ${Wides}            4
-
-Enter NoBalls
-    input text              ${Noballs}          2
-
-# Enter Fielding details
-
-Enter catches
-    input text              ${Catches}         3
-
-Enter stumpings
-    input text              ${Stumpings}        2
-
-Enter Runouts
-    input text              ${Run Outs}         1
-
-Save the match
-    click element           ${Save}
-
+#
+#Move to Portal
+#    click element    ${Profile}
+#    sleep            ${sleep}
+#    click element    ${Portal}
+#
+#Verify the link
+#    ${portal_link}=     get location
+#    log to console      ${portal_link}
+#    should be equal     ${portal_link}      https://www.pitchvision.com/#/hub
+#
+#Verify the portal options
+#    wait until element is visible            ${AllFeatures}
+#    @{portal_features}=     Get WebElements  ${AllFeatures}
+#    @{result}=       Create List
+#    :FOR   ${locator}   IN    @{portal_features}
+#        \       ${name}=    Get Text    ${locator}
+#        \   log to console      ${name}
+# #       \       Append To List    ${result}    ${name}
+#    Log    ${result}
+#
+##Match Page Keywords
+#Redirect to Match Page
+#    click element      ${MatchStatus}
+#    sleep               ${sleep}
+#
+#Add match status
+#    click element       ${Addmatch}
+#
+#
+#Date selection
+#    click element       ${Date}
+#    sleep               2
+#    click element       ${SelectDate}
+#
+#
+#Enter teamname
+#    input text          ${TeamName}         World class match
+#
+#Enter opposition
+#    input text          ${Opposition}       Gurgaon Gang Stars
+#
+#Enter League
+#    input text          ${League}           GioneeStars
+#
+#Enter Venue
+#    input text          ${Venue}            IPhoneUsers
+#
+#Enter Match type
+#    input text          ${MatchType}        OneDay
+#
+#Select match format
+#    Select From List By Label       ${MatchFormat}      T20
+#
+#select match grade
+#    Select From List By Label       ${MatchGrade}       Club
+#
+#select match result
+#    Select From List By Label       ${Result}           Lost
+#
+#select match surface
+#    Select From List By Label       ${Surface}          Artificial Surface
+#
+#
+## Batting values for the match
+#select position
+#    select from list by label       ${Position}         1
+#
+#Enter batting runs
+#    input text                      ${Runs}             45
+#
+#Enter balls faced
+#    input text                      ${Ballsfaced}       32
+#
+#select Dismissal type
+#    select from list by label       ${Dismissals}       Bowled
+#
+#
+## Enter bowling details for the match
+#
+#Enter Overs
+#    input text              ${Overs}            5
+#
+#Enter Bowling Runs
+#    input text              ${Runs}             23
+#
+#Enter Wickets
+#    input text              ${wickets}          3
+#
+#Enter wides
+#    input text              ${Wides}            4
+#
+#Enter NoBalls
+#    input text              ${Noballs}          2
+#
+## Enter Fielding details
+#
+#Enter catches
+#    input text              ${Catches}         3
+#
+#Enter stumpings
+#    input text              ${Stumpings}        2
+#
+#Enter Runouts
+#    input text              ${Run Outs}         1
+#
+#Save the match
+#    click element           ${Save}
+#
 
 *** Variables ***
 
