@@ -5,12 +5,12 @@ Library         OperatingSystem
 Suite Setup     Setup chromedriver
 
 *** Test Cases ***
-Test Case-1
-    should be equal     1       2
-    should be equal     Sri     Sri
-
-Test Case-2
-    should not be equal as integers  1      2
+#Test Case-1
+#    should be equal     1       2
+#    should be equal     Sri     Sri
+#
+#Test Case-2
+#    should not be equal as integers  1      2
 
 Test Case-3
     open browser    ${URL}      ${Chrome}
