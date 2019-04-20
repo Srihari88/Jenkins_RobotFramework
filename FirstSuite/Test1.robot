@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation    Suite description
 Library         SeleniumLibrary
+Library         OperatingSystem
+Suite Setup     Setup chromedriver
 
 *** Test Cases ***
 Test Case-1
@@ -15,7 +17,8 @@ Test Case-3
     close browser
 
 *** Keywords ***
-
+Setup chromedriver
+  Set Environment Variable  webdriver.chrome.driver  /usr/local/bin/chromedriver
 
 *** Variables ***
 
