@@ -3,6 +3,8 @@ Documentation    Suite description
 Library          SeleniumLibrary
 #Library         OperatingSystem
 #Suite Setup     Setup chromedriver
+Library          keywords.robot
+*** Keywords ***
 
 *** Test Cases ***
 Test Case-1
@@ -27,14 +29,3 @@ Test Case-5
     ${get text}=      Get text      //div[text()='Create a new account']
     log to console     {get text}
     close browser
-
-
-
-*** Keywords ***
-Setup chromedriver
-  Set Environment Variable  webdriver.chrome.driver  /usr/local/bin/chromedriver
-
-*** Variables ***
-
-${URL}          https://www.facebook.com/
-${Chrome}       Chrome
